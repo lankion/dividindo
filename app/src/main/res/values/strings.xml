@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">Dividindo</string>
     <string name="textoInicial">DIVIDINDO</string>
+    <string name="r_0_00">R$0,00</string>
+    <string name="valor">VALOR</string>
+    <string name="pessoas">PESSOAS</string>
+    <string name="_0">0</string>
+    <string name="compartilha">compartilha</string>
+    <string name="fala">fala</string>
 </resources>
