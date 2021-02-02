@@ -87,13 +87,13 @@ public class MainActivity extends AppCompatActivity implements TextWatcher, View
         if (v == compartilha){
             Intent intent =new Intent(Intent.ACTION_SEND);
             intent.setType("text/plain");
-            intent.putExtra(android.content.Intent.EXTRA_TEXT, "O valor para cada pessoa deu" + valorFinal.getText().toString());
+            intent.putExtra(android.content.Intent.EXTRA_TEXT, "O valor para cada pessoa deu " + valorFinal.getText().toString());
             startActivity(Intent.createChooser(intent, "Compartilhando a conta!"));
 
         }
         if (v == fala){
             if (converteFala!=null){
-                converteFala.speak("O valor por pessoa é de " + valorFinal.getText().toString() + "reais", TextToSpeech.QUEUE_FLUSH, null, "ID1");
+                converteFala.speak("O valor por pessoa é de " + valorFinal.getText().toString() + "centavos", TextToSpeech.QUEUE_FLUSH, null, "ID1");
             }
         }
     }
