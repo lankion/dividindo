@@ -7,4 +7,11 @@
     <string name="_0">0</string>
     <string name="compartilha">compartilha</string>
     <string name="fala">fala</string>
+    <string name="valorPessoa">O valor por pessoa é de</string>
+    <string name="valorParaCada">O valor para cada pessoa deu </string>
+    <string name="cifrao">R$</string>
+    <string name="compartilhaConta">Compartilhando a conta!</string>
+    <string name="centavos">centavos</string>
+    <string name="ttsligado">TTS ativado</string>
+    <string name="ttsdesligado">Sem TTS habilitado</string>
 </resources>

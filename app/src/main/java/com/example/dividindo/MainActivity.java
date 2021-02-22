@@ -74,10 +74,10 @@ public class MainActivity extends AppCompatActivity implements TextWatcher, View
             double qtn = Double.parseDouble(quantidadePessoas.getText().toString());
             res = (res /qtn);
             DecimalFormat df = new DecimalFormat("#.00");
-            valorFinal.setText("R$" + df.format(res));
+            valorFinal.setText(R.string.cifrao + df.format(res));
 
         }catch(Exception e){
-            valorFinal.setText("R$ 0.00");
+            valorFinal.setText(R.string.r_0_00);
         }
 
     }
@@ -87,13 +87,13 @@ public class MainActivity extends AppCompatActivity implements TextWatcher, View
         if (v == compartilha){
             Intent intent =new Intent(Intent.ACTION_SEND);
             intent.setType("text/plain");
-            intent.putExtra(android.content.Intent.EXTRA_TEXT, "O valor para cada pessoa deu " + valorFinal.getText().toString());
+            intent.putExtra(android.content.Intent.EXTRA_TEXT, R.string.valorParaCada + valorFinal.getText().toString());
             startActivity(Intent.createChooser(intent, "Compartilhando a conta!"));
 
         }
         if (v == fala){
             if (converteFala!=null){
-                converteFala.speak("O valor por pessoa é de " + valorFinal.getText().toString() + "centavos", TextToSpeech.QUEUE_FLUSH, null, "ID1");
+                converteFala.speak(R.string.valorPessoa + valorFinal.getText().toString() + R.string.centavos, TextToSpeech.QUEUE_FLUSH, null, "ID1");
             }
         }
     }
@@ -101,9 +101,9 @@ public class MainActivity extends AppCompatActivity implements TextWatcher, View
     @Override
     public void onInit(int status) {
         if (status == TextToSpeech.SUCCESS){
-            Toast.makeText(this, "TTS ativado", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, R.string.ttsligado, Toast.LENGTH_LONG).show();
         } else if(status == TextToSpeech.ERROR){
-            Toast.makeText(this, "Sem TTS habilitado", Toast.LENGTH_LONG).show();
+            Toast.makeText(this, R.string.ttsdesligado, Toast.LENGTH_LONG).show();
         }
     }
 }

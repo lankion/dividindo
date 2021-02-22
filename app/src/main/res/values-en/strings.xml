@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Split</string>
+    <string name="textoInicial">SPLIT</string>
+    <string name="r_0_00">U$0,00</string>
+    <string name="valor">VALUE</string>
+    <string name="pessoas">PERSONS</string>
+    <string name="_0">0</string>
+    <string name="compartilha">share</string>
+    <string name="fala">talk</string>
+    <string name="valorPessoa">The value per person is</string>
+    <string name="valorParaCada">The value for each person is </string>
+    <string name="cifrao">U$</string>
+    <string name="compartilhaConta">Sharing the bill</string>
+    <string name="centavos">cents</string>
+    <string name="ttsligado">TTS enabled</string>
+    <string name="ttsdesligado">No TTS enabled</string>
+</resources>
